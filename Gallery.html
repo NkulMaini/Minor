@@ -1,0 +1,2486 @@
+		<!DOCTYPE html>
+		<html lang="en-US" class="no-js">
+
+
+		<head>
+
+
+		<title>
+            Gallery - The Speaking Library
+        </title>
+		    <link rel='stylesheet' id='wp-block-library-css'
+		        href='../../wp-includes/css/dist/block-library/style.minf658.css?ver=5.8.1' type='text/css' media='all' />
+		    <style id='wp-block-library-theme-inline-css' type='text/css'>
+		    #start-resizable-editor-section {
+		        display: none
+		    }
+
+		    .wp-block-audio figcaption {
+		        color: #555;
+		        font-size: 13px;
+		        text-align: center
+		    }
+
+		    .is-dark-theme .wp-block-audio figcaption {
+		        color: hsla(0, 0%, 100%, .65)
+		    }
+
+		    .wp-block-code {
+		        font-family: Menlo, Consolas, monaco, monospace;
+		        color: #1e1e1e;
+		        padding: .8em 1em;
+		        border: 1px solid #ddd;
+		        border-radius: 4px
+		    }
+
+		    .wp-block-embed figcaption {
+		        color: #555;
+		        font-size: 13px;
+		        text-align: center
+		    }
+
+		    .is-dark-theme .wp-block-embed figcaption {
+		        color: hsla(0, 0%, 100%, .65)
+		    }
+
+		    .blocks-gallery-caption {
+		        color: #555;
+		        font-size: 13px;
+		        text-align: center
+		    }
+
+		    .is-dark-theme .blocks-gallery-caption {
+		        color: hsla(0, 0%, 100%, .65)
+		    }
+
+		    .wp-block-image figcaption {
+		        color: #555;
+		        font-size: 13px;
+		        text-align: center
+		    }
+
+		    .is-dark-theme .wp-block-image figcaption {
+		        color: hsla(0, 0%, 100%, .65)
+		    }
+
+		    .wp-block-pullquote {
+		        border-top: 4px solid;
+		        border-bottom: 4px solid;
+		        margin-bottom: 1.75em;
+		        color: currentColor
+		    }
+
+		    .wp-block-pullquote__citation,
+		    .wp-block-pullquote cite,
+		    .wp-block-pullquote footer {
+		        color: currentColor;
+		        text-transform: uppercase;
+		        font-size: .8125em;
+		        font-style: normal
+		    }
+
+		    .wp-block-quote {
+		        border-left: .25em solid;
+		        margin: 0 0 1.75em;
+		        padding-left: 1em
+		    }
+
+		    .wp-block-quote cite,
+		    .wp-block-quote footer {
+		        color: currentColor;
+		        font-size: .8125em;
+		        position: relative;
+		        font-style: normal
+		    }
+
+		    .wp-block-quote.has-text-align-right {
+		        border-left: none;
+		        border-right: .25em solid;
+		        padding-left: 0;
+		        padding-right: 1em
+		    }
+
+		    .wp-block-quote.has-text-align-center {
+		        border: none;
+		        padding-left: 0
+		    }
+
+		    .wp-block-quote.is-large,
+		    .wp-block-quote.is-style-large {
+		        border: none
+		    }
+
+		    .wp-block-search .wp-block-search__label {
+		        font-weight: 700
+		    }
+
+		    .wp-block-group.has-background {
+		        padding: 1.25em 2.375em;
+		        margin-top: 0;
+		        margin-bottom: 0
+		    }
+
+		    .wp-block-separator {
+		        border: none;
+		        border-bottom: 2px solid;
+		        margin-left: auto;
+		        margin-right: auto;
+		        opacity: .4
+		    }
+
+		    .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+		        width: 100px
+		    }
+
+		    .wp-block-separator.has-background:not(.is-style-dots) {
+		        border-bottom: none;
+		        height: 1px
+		    }
+
+		    .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+		        height: 2px
+		    }
+
+		    .wp-block-table thead {
+		        border-bottom: 3px solid
+		    }
+
+		    .wp-block-table tfoot {
+		        border-top: 3px solid
+		    }
+
+		    .wp-block-table td,
+		    .wp-block-table th {
+		        padding: .5em;
+		        border: 1px solid;
+		        word-break: normal
+		    }
+
+		    .wp-block-table figcaption {
+		        color: #555;
+		        font-size: 13px;
+		        text-align: center
+		    }
+
+		    .is-dark-theme .wp-block-table figcaption {
+		        color: hsla(0, 0%, 100%, .65)
+		    }
+
+		    .wp-block-video figcaption {
+		        color: #555;
+		        font-size: 13px;
+		        text-align: center
+		    }
+
+		    .is-dark-theme .wp-block-video figcaption {
+		        color: hsla(0, 0%, 100%, .65)
+		    }
+
+		    .wp-block-template-part.has-background {
+		        padding: 1.25em 2.375em;
+		        margin-top: 0;
+		        margin-bottom: 0
+		    }
+
+		    #end-resizable-editor-section {
+		        display: none
+		    }
+		    </style>
+		    <link rel='stylesheet' id='cff_carousel_css-css'
+		        href='../../wp-content/plugins/cff-extensions/cff-carousel/css/carousel1576.css?ver=1.2.1' type='text/css'
+		        media='all' />
+		    <link rel='stylesheet' id='contact-form-7-css'
+		        href='../../wp-content/plugins/contact-form-7/includes/css/styles7661.css?ver=5.4.2' type='text/css'
+		        media='all' />
+		    <link rel='stylesheet' id='jquery-ui-css-css'
+		        href='../../wp-content/plugins/custom-datepicker-nmr/css/jquery-uif658.css?ver=5.8.1' type='text/css'
+		        media='all' />
+		    <link rel='stylesheet' id='wpcf7-redirect-script-frontend-css'
+		        href='../../wp-content/plugins/wpcf7-redirect/build/css/wpcf7-redirect-frontend.minf658.css?ver=5.8.1'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='cff-css'
+		        href='../../wp-content/plugins/custom-facebook-feed-pro/assets/css/cff-style0bb8.css?ver=3.19.5'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='give-styles-css'
+		        href='../../wp-content/plugins/give/assets/dist/css/giveac84.css?ver=2.13.4' type='text/css' media='all' />
+		    <link rel='stylesheet' id='give_recurring_css-css'
+		        href='../../wp-content/plugins/give-recurring/assets/css/give-recurringd396.css?ver=1.12.6' type='text/css'
+		        media='all' />
+		    <link rel='stylesheet' id='the7-Defaults-css'
+		        href='../../wp-content/uploads/smile_fonts/Defaults/Defaultsf658.css?ver=5.8.1' type='text/css' media='all' />
+		    <link rel='stylesheet' id='the7-icomoon-material-24x24-css'
+		        href='../../wp-content/uploads/smile_fonts/icomoon-material-24x24/icomoon-material-24x24f658.css?ver=5.8.1'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='the7-icomoon-free-social-contact-16x16-css'
+		        href='../../wp-content/uploads/smile_fonts/icomoon-free-social-contact-16x16/icomoon-free-social-contact-16x16f658.css?ver=5.8.1'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='the7-icomoon-icomoonfree-16x16-css'
+		        href='../../wp-content/uploads/smile_fonts/icomoon-icomoonfree-16x16/icomoon-icomoonfree-16x16f658.css?ver=5.8.1'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='the7-icomoon-numbers-32x32-css'
+		        href='../../wp-content/uploads/smile_fonts/icomoon-numbers-32x32/icomoon-numbers-32x32f658.css?ver=5.8.1'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='js_composer_front-css'
+		        href='../../wp-content/plugins/js_composer/assets/css/js_composer.minfb18.css?ver=6.6.0.1' type='text/css'
+		        media='all' />
+		    <link rel='stylesheet' id='dt-web-fonts-css'
+		        href='https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:200,300,400,500,600,700%7COpen+Sans:400,600,700%7CRoboto:400,600,700%7CHLFont:400,600,700%7CMontserrat:300,400,600,700'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='dt-main-css' href='../../wp-content/themes/dt-the7/css/main.mine7f3.css?ver=9.17.0'
+		        type='text/css' media='all' />
+		    <style id='dt-main-inline-css' type='text/css'>
+		    body #load {
+		        display: block;
+		        height: 100%;
+		        overflow: hidden;
+		        position: fixed;
+		        width: 100%;
+		        z-index: 9901;
+		        opacity: 1;
+		        visibility: visible;
+		        transition: all .35s ease-out;
+		    }
+
+		    .load-wrap {
+		        width: 100%;
+		        height: 100%;
+		        background-position: center center;
+		        background-repeat: no-repeat;
+		        text-align: center;
+		    }
+
+		    .load-wrap>svg {
+		        position: absolute;
+		        top: 50%;
+		        left: 50%;
+		        transform: translate(-50%, -50%);
+		    }
+
+		    #load {
+		        background-color: #ffffff;
+		    }
+
+		    .uil-default rect:not(.bk) {
+		        fill: #4f5b66;
+		    }
+
+		    .uil-ring>path {
+		        fill: #4f5b66;
+		    }
+
+		    .ring-loader .circle {
+		        fill: #4f5b66;
+		    }
+
+		    .ring-loader .moving-circle {
+		        fill: #4f5b66;
+		    }
+
+		    .uil-hourglass .glass {
+		        stroke: #4f5b66;
+		    }
+
+		    .uil-hourglass .sand {
+		        fill: #4f5b66;
+		    }
+		    }
+		    </style>
+		    <link rel='stylesheet' id='the7-font-css'
+		        href='../../wp-content/themes/dt-the7/fonts/icomoon-the7-font/icomoon-the7-font.mine7f3.css?ver=9.17.0'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='the7-wpbakery-css'
+		        href='../../wp-content/themes/dt-the7/css/wpbakery.mine7f3.css?ver=9.17.0' type='text/css' media='all' />
+		    <link rel='stylesheet' id='dt-custom-css' href='../../wp-content/uploads/the7-css/custom6b99.css?ver=5364571514ba'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='dt-media-css' href='../../wp-content/uploads/the7-css/media6b99.css?ver=5364571514ba'
+		        type='text/css' media='all' />
+		    <link rel='stylesheet' id='ultimate-vc-addons-style-min-css'
+		        href='../../wp-content/plugins/Ultimate_VC_Addons/assets/min-css/ultimate.min846c.css?ver=3.19.11'
+		        type='text/css' media='all' />
+		    <script type='text/javascript' src='../../wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'>
+		    </script>
+		    <script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2'
+		        id='jquery-migrate-js'></script>
+		    <script type='text/javascript' id='sgr_main-js-extra'>
+		    /* <![CDATA[ */
+		    var sgr_main = {
+		        "sgr_site_key": "6LfR1cAZAAAAAD1TpEXE5cuYiX88QLK0tEvuCuFs"
+		    };
+		    /* ]]> */
+		    </script>
+		    <script type='text/javascript' src='../../wp-includes/js/jquery/ui/core.min35d0.js?ver=1.12.1'
+		        id='jquery-ui-core-js'></script>
+		    <script type='text/javascript' src='../../wp-includes/js/jquery/ui/datepicker.min35d0.js?ver=1.12.1'
+		        id='jquery-ui-datepicker-js'></script>
+		    <script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+		    jQuery(document).ready(function(jQuery) {
+		        jQuery.datepicker.setDefaults({
+		            "closeText": "Close",
+		            "currentText": "Today",
+		            "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August",
+		                "September", "October", "November", "December"
+		            ],
+		            "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct",
+		                "Nov", "Dec"
+		            ],
+		            "nextText": "Next",
+		            "prevText": "Previous",
+		            "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+		                "Saturday"],
+		            "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+		            "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+		            "dateFormat": "dd\/mm\/yy",
+		            "firstDay": 1,
+		            "isRTL": false
+		        });
+		    });
+		    </script>
+		    <script type='text/javascript'
+		        src='../../wp-content/plugins/custom-datepicker-nmr/js/nmr-datepickerf658.js?ver=5.8.1'
+		        id='nmr_datepicker-js'></script>
+		    <script type='text/javascript'
+		        src='../../wp-content/plugins/revslider/public/assets/js/rbtools.min069c.js?ver=6.5.8' async id='tp-tools-js'>
+		    </script>
+		    <script type='text/javascript' src='../../wp-content/plugins/revslider/public/assets/js/rs6.min069c.js?ver=6.5.8'
+		        async id='revmin-js'></script>
+		    <script type='text/javascript' id='give-stripe-js-js-extra'>
+
+
+		    </script>
+		    <script type='text/javascript' src='https://js.stripe.com/v3/?ver=2.13.4' id='give-stripe-js-js'></script>
+		    <script type='text/javascript' src='../../wp-content/plugins/give/assets/dist/js/give-stripeac84.js?ver=2.13.4'
+		        id='give-stripe-onpage-js-js'></script>
+		    <script type='text/javascript' src='../../wp-content/plugins/give/assets/dist/js/babel-polyfillac84.js?ver=2.13.4'
+		        id='babel-polyfill-js'></script>
+		    <script type='text/javascript' id='give-js-extra'>
+
+
+		    </script>
+		    <script type='text/javascript' src='../../wp-content/plugins/give/assets/dist/js/giveac84.js?ver=2.13.4'
+		        id='give-js'></script>
+		    <script type='text/javascript' id='give_recurring_script-js-extra'>
+		    /* <![CDATA[ */
+		    var Give_Recurring_Vars = {
+		        "email_access": "1",
+		        "pretty_intervals": {
+		            "1": "Every",
+		            "2": "Every two",
+		            "3": "Every three",
+		            "4": "Every four",
+		            "5": "Every five",
+		            "6": "Every six"
+		        },
+		        "pretty_periods": {
+		            "day": "Daily",
+		            "week": "Weekly",
+		            "month": "Monthly",
+		            "quarter": "Quarterly",
+		            "half-year": "Semi-Annually",
+		            "year": "Yearly"
+		        },
+		        "messages": {
+		            "daily_forbidden": "The selected payment method does not support daily recurring giving. Please select another payment method or supported giving frequency.",
+		            "confirm_cancel": "Are you sure you want to cancel this subscription?"
+		        },
+		        "multi_level_message_pre_text": "You have chosen to  Contribute"
+		    };
+		    /* ]]> */
+		    </script>
+		    <script type='text/javascript'
+		        src='../../wp-content/plugins/give-recurring/assets/js/give-recurringd396.js?ver=1.12.6'
+		        id='give_recurring_script-js'></script>
+		    <script type='text/javascript' id='dt-above-fold-js-extra'>
+
+
+		    </script>
+		    <script type='text/javascript' src='../../wp-content/themes/dt-the7/js/above-the-fold.mine7f3.js?ver=9.17.0'
+		        id='dt-above-fold-js'></script>
+		    <script type='text/javascript'
+		        src='../../wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate.min846c.js?ver=3.19.11'
+		        id='ultimate-vc-addons-script-js'></script>
+		    <script type='text/javascript'
+		        src='../../wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min846c.js?ver=3.19.11'
+		        id='ultimate-vc-addons-row-bg-js'></script>
+		    <link rel="https://api.w.org/" href="https://humanlibrary.org/wp-json/" />
+		    <link rel="alternate" type="application/json" href="https://humanlibrary.org/wp-json/wp/v2/pages/15" />
+		    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://humanlibrary.org/xmlrpc.php?rsd" />
+		    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+		        href="https://humanlibrary.org/wp-includes/wlwmanifest.xml" />
+		    <meta name="generator" content="WordPress 5.8.1" />
+		    <link rel='shortlink' href='https://humanlibrary.org/?p=15' />
+		    <link rel="alternate" type="application/json+oembed"
+		        href="https://humanlibrary.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumanlibrary.org%2Fabout%2Four-team%2F" />
+		    <link rel="alternate" type="text/xml+oembed"
+		        href="https://humanlibrary.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumanlibrary.org%2Fabout%2Four-team%2F&amp;format=xml" />
+		    <!-- Custom Facebook Feed JS vars -->
+		    <script type="text/javascript">
+		    var cffsiteurl = "https://humanlibrary.org/wp-content/plugins";
+		    var cffajaxurl = "https://humanlibrary.org/wp-admin/admin-ajax.php";
+
+
+		    var cfflinkhashtags = "false";
+		    </script>
+		    <meta name="generator" content="Give v2.13.4" />
+		    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+		    <meta name="generator"
+		        content="Powered by Slider Revolution 6.5.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+		    <script type="text/javascript" id="the7-loader-script">
+		    document.addEventListener("DOMContentLoaded", function(event) {
+		        var load = document.getElementById("load");
+		        if (!load.classList.contains('loader-removed')) {
+		            var removeLoading = setTimeout(function() {
+		                load.className += " loader-removed";
+		            }, 300);
+		        }
+		    });
+		    </script>
+
+		    <style type="text/css" data-type="vc_shortcodes-custom-css">
+		    .vc_custom_1498639452670 {
+		        padding-top: 70px !important;
+		        padding-bottom: 20px !important;
+		    }
+
+		    .vc_custom_1498639491081 {
+		        padding-bottom: 70px !important;
+		    }
+
+		    .vc_custom_1498639494923 {
+		        padding-bottom: 70px !important;
+		    }
+
+		    .vc_custom_1498639502093 {
+		        padding-bottom: 70px !important;
+		    }
+
+		    .vc_custom_1561978842798 {
+		        padding-bottom: 20px !important;
+		    }
+
+		    .vc_custom_1561978643086 {
+		        padding-bottom: 20px !important;
+		    }
+
+		    .vc_custom_1547327847734 {
+		        padding-bottom: 20px !important;
+		    }
+
+		    .vc_custom_1561978351688 {
+		        padding-bottom: 20px !important;
+		    }
+
+		    .vc_custom_1556003453028 {
+		        padding-bottom: 20px !important;
+		    }
+
+		    .vc_custom_1571921448673 {
+		        padding-bottom: 20px !important;
+		    }
+
+		    .vc_custom_1556003712730 {
+		        padding-bottom: 20px !important;
+		    }
+		    </style><noscript>
+		        <style>
+		        .wpb_animate_when_almost_visible {
+		            opacity: 1;
+		        }
+		        </style>
+		    </noscript>
+		    <script id="mcjs">
+		    ! function(c, h, i, m, p) {
+		        m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m,
+		            p)
+		    }(document, "script",
+		        "../../../chimpstatic.com/mcjs-connected/js/users/9666782fa54ace89471f72440/58fa3654f6c3ca9931cc50fb5.js");
+		    </script>
+
+
+
+
+		    </style>
+		</head>
+
+		<body data-rsssl=1 id="the7-body"
+		    class="page-template-default page page-id-15 page-child parent-pageid-15517 wp-embed-responsive the7-core-ver-2.5.7.1 give-recurring filter-grayscale dt-responsive-on right-mobile-menu-close-icon ouside-menu-close-icon mobile-hamburger-close-bg-enable mobile-hamburger-close-bg-hover-enable  fade-medium-mobile-menu-close-icon fade-medium-menu-close-icon srcset-enabled btn-flat custom-btn-color custom-btn-hover-color phantom-fade phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-left first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style dt-fa-compatibility the7-ver-9.17.0 wpb-js-composer js-comp-ver-6.6.0.1 vc_responsive">
+		    <!-- The7 9.17.0 -->
+		    <div id="load" class="ring-loader">
+		        <div class="load-wrap"></div>
+		    </div>
+		    <div id="page">
+		        <div class="masthead classic-header justify full-width-line widgets dividers surround shadow-mobile-header-decoration small-mobile-menu-icon mobile-menu-icon-bg-on mobile-menu-icon-hover-bg-on dt-parent-menu-clickable show-sub-menu-on-hover show-device-logo"
+		            role="banner">
+		            <div class="top-bar top-bar-line-hide">
+
+		                <div class="top-bar-bg">
+		                </div>
+		                <div class="left-widgets mini-widgets">
+		                    <span class="mini-contacts clock show-on-desktop in-top-bar-left in-menu-second-switch">
+		                        Mon - Fri: 9AM - 7PM
+		                    </span>
+		                    <span class="mini-contacts address show-on-desktop in-top-bar-left in-menu-second-switch">
+		                        +91 9811301467
+		                    </span>
+		                </div>
+		                <div class="right-widgets mini-widgets">
+		                    <div
+		                        class="soc-ico show-on-desktop in-top-bar-right in-top-bar custom-bg disabled-border border-off hover-accent-bg hover-disabled-border  hover-border-off">
+		                        <a title="Facebook " href="https://www.facebook.com/The-Speaking-Library-109329424940481/" target="_blank"
+		                            class="facebook">
+		                            <span class="soc-font-icon">
+		                            </span>
+		                            <span class="screen-reader-text">
+		                                Facebook
+		                            </span>
+		                        </a>
+		                        <a title="Twitter " href="https://twitter.com/Speaking_Librar" target="_blank" class="twitter">
+		                            <span class="soc-font-icon">
+		                            </span>
+		                            <span class="screen-reader-text">
+		                                Twitter
+		                            </span>
+		                        </a>
+		                        <a title="YouTube " href="https://www.youtube.com/channel/UCrIdKDnmCu6MD3WkZYlpJ4w" target="_blank" class="you-tube">
+		                            <span class="soc-font-icon">
+		                            </span>
+		                            <span class="screen-reader-text">
+		                                YouTube
+		                            </span>
+		                        </a>
+		                        <a title="Instagram " href="https://www.instagram.com/the_speaking_library/" target="_blank"
+		                            class="instagram">
+		                            <span class="soc-font-icon">
+		                            </span>
+		                            <span class="screen-reader-text">
+		                                Instagram
+		                            </span>
+		                        </a>
+		                    </div>
+		                </div>
+		            </div>
+		            <header class="header-bar">
+		                <div class="branding">
+		                    <div id="site-title" class="assistive-text">
+		                        The Speaking Library
+		                    </div>
+		                    <a class=""
+		                        href="C:\Users\lenovo\Desktop\The Speaking Library\The Speaking Library\home.html">
+		                        <img class=" preload-me" src="C:\Users\lenovo\Desktop\The Speaking Library\6.png"
+		                            srcset="C:\Users\lenovo\Desktop\The Speaking Library\6.png 500w, C:\Users\lenovo\Desktop\The Speaking Library\6.png 500w"
+		                            width="500" height="94" sizes="500px" alt="The Speaking Library " />
+		                    </a>
+		                    <div class="mini-widgets">
+		                        <a href="Put google form link for contribution here"
+		                            class="microwidget-btn mini-button header-elements-button-1 show-on-desktop near-logo-first-switch hide-on-second-switch microwidget-btn-hover-bg-on border-on hover-border-on btn-icon-align-right">
+		                            <span>
+		                                Want to Contribute?
+		                            </span>
+		                        </a>
+		                    </div>
+		                </div>
+		                <nav class="navigation">
+
+		                </nav>
+
+		            </header>
+
+		        </div>
+		        <div class="page-title content-left solid-bg page-title-responsive-enabled title-outline-decoration">
+		            <div class="wf-wrap">
+
+		                <div class="page-title-head hgroup">
+		                    <h1>The Speaking Library Gallery</h1>
+		                </div>
+		                <div class="page-title-breadcrumbs">
+		                    <div class="assistive-text">You are here:</div>
+		                    <ol class="breadcrumbs text-small" itemscope itemtype="https://schema.org/BreadcrumbList">
+		                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a
+		                                itemprop="item"
+		                                href="C:\Users\lenovo\Desktop\The Speaking Library\The Speaking Library\home.html"
+		                                title="Home"><span itemprop="name">The Speaking Library</span></a>
+		                            <meta itemprop="position" content="1" />
+		                        </li>
+		                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a
+		                                itemprop="item" href="C:\Users\lenovo\Desktop\The Speaking Library\The Speaking Library\about\index.html" title=""><span itemprop="name">Home</span></a>
+		                            <meta itemprop="position" content="2" />
+		                        </li>
+		                        <li class="current" itemprop="itemListElement" itemscope
+		                            itemtype="https://schema.org/ListItem"><span itemprop="name">Our team</span>
+		                            <meta itemprop="position" content="3" />
+		                        </li>
+		                    </ol>
+		                </div>
+		            </div>
+		        </div>
+		        <div id="main" class="sidebar-none sidebar-divider-off">
+
+
+		            <style type="text/css">
+		            img.wp-smiley,
+		            img.emoji {
+		                display: inline !important;
+		                border: none !important;
+		                box-shadow: none !important;
+		                height: 1em !important;
+		                width: 1em !important;
+		                margin: 0 .07em !important;
+		                vertical-align: -0.1em !important;
+		                background: none !important;
+		                padding: 0 !important;
+		            }
+		            </style>
+		            <link rel='stylesheet' id='sgr_main-css'
+		                href='https://humanlibrary.org/wp-content/plugins/simple-google-recaptcha/sgr.css?ver=1623049174'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='wp-block-library-css'
+		                href='https://humanlibrary.org/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <style id='wp-block-library-theme-inline-css' type='text/css'>
+		            #start-resizable-editor-section {
+		                display: none
+		            }
+
+		            .wp-block-audio figcaption {
+		                color: #555;
+		                font-size: 13px;
+		                text-align: center
+		            }
+
+		            .is-dark-theme .wp-block-audio figcaption {
+		                color: hsla(0, 0%, 100%, .65)
+		            }
+
+		            .wp-block-code {
+		                font-family: Menlo, Consolas, monaco, monospace;
+		                color: #1e1e1e;
+		                padding: .8em 1em;
+		                border: 1px solid #ddd;
+		                border-radius: 4px
+		            }
+
+		            .wp-block-embed figcaption {
+		                color: #555;
+		                font-size: 13px;
+		                text-align: center
+		            }
+
+		            .is-dark-theme .wp-block-embed figcaption {
+		                color: hsla(0, 0%, 100%, .65)
+		            }
+
+		            .blocks-gallery-caption {
+		                color: #555;
+		                font-size: 13px;
+		                text-align: center
+		            }
+
+		            .is-dark-theme .blocks-gallery-caption {
+		                color: hsla(0, 0%, 100%, .65)
+		            }
+
+		            .wp-block-image figcaption {
+		                color: #555;
+		                font-size: 13px;
+		                text-align: center
+		            }
+
+		            .is-dark-theme .wp-block-image figcaption {
+		                color: hsla(0, 0%, 100%, .65)
+		            }
+
+		            .wp-block-pullquote {
+		                border-top: 4px solid;
+		                border-bottom: 4px solid;
+		                margin-bottom: 1.75em;
+		                color: currentColor
+		            }
+
+		            .wp-block-pullquote__citation,
+		            .wp-block-pullquote cite,
+		            .wp-block-pullquote footer {
+		                color: currentColor;
+		                text-transform: uppercase;
+		                font-size: .8125em;
+		                font-style: normal
+		            }
+
+		            .wp-block-quote {
+		                border-left: .25em solid;
+		                margin: 0 0 1.75em;
+		                padding-left: 1em
+		            }
+
+		            .wp-block-quote cite,
+		            .wp-block-quote footer {
+		                color: currentColor;
+		                font-size: .8125em;
+		                position: relative;
+		                font-style: normal
+		            }
+
+		            .wp-block-quote.has-text-align-right {
+		                border-left: none;
+		                border-right: .25em solid;
+		                padding-left: 0;
+		                padding-right: 1em
+		            }
+
+		            .wp-block-quote.has-text-align-center {
+		                border: none;
+		                padding-left: 0
+		            }
+
+		            .wp-block-quote.is-large,
+		            .wp-block-quote.is-style-large {
+		                border: none
+		            }
+
+		            .wp-block-search .wp-block-search__label {
+		                font-weight: 700
+		            }
+
+		            .wp-block-group.has-background {
+		                padding: 1.25em 2.375em;
+		                margin-top: 0;
+		                margin-bottom: 0
+		            }
+
+		            .wp-block-separator {
+		                border: none;
+		                border-bottom: 2px solid;
+		                margin-left: auto;
+		                margin-right: auto;
+		                opacity: .4
+		            }
+
+		            .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+		                width: 100px
+		            }
+
+		            .wp-block-separator.has-background:not(.is-style-dots) {
+		                border-bottom: none;
+		                height: 1px
+		            }
+
+		            .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+		                height: 2px
+		            }
+
+		            .wp-block-table thead {
+		                border-bottom: 3px solid
+		            }
+
+		            .wp-block-table tfoot {
+		                border-top: 3px solid
+		            }
+
+		            .wp-block-table td,
+		            .wp-block-table th {
+		                padding: .5em;
+		                border: 1px solid;
+		                word-break: normal
+		            }
+
+		            .wp-block-table figcaption {
+		                color: #555;
+		                font-size: 13px;
+		                text-align: center
+		            }
+
+		            .is-dark-theme .wp-block-table figcaption {
+		                color: hsla(0, 0%, 100%, .65)
+		            }
+
+		            .wp-block-video figcaption {
+		                color: #555;
+		                font-size: 13px;
+		                text-align: center
+		            }
+
+		            .is-dark-theme .wp-block-video figcaption {
+		                color: hsla(0, 0%, 100%, .65)
+		            }
+
+		            .wp-block-template-part.has-background {
+		                padding: 1.25em 2.375em;
+		                margin-top: 0;
+		                margin-bottom: 0
+		            }
+
+		            #end-resizable-editor-section {
+		                display: none
+		            }
+		            </style>
+		            <link rel='stylesheet' id='cff_carousel_css-css'
+		                href='https://humanlibrary.org/wp-content/plugins/cff-extensions/cff-carousel/css/carousel.css?ver=1.2.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='contact-form-7-css'
+		                href='https://humanlibrary.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.3'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='jquery-ui-css-css'
+		                href='https://humanlibrary.org/wp-content/plugins/custom-datepicker-nmr/css/jquery-ui.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='wpcf7-redirect-script-frontend-css'
+		                href='https://humanlibrary.org/wp-content/plugins/wpcf7-redirect/build/css/wpcf7-redirect-frontend.min.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='cff-css'
+		                href='https://humanlibrary.org/wp-content/plugins/custom-facebook-feed-pro/assets/css/cff-style.css?ver=3.19.5'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='give-styles-css'
+		                href='https://humanlibrary.org/wp-content/plugins/give/assets/dist/css/give.css?ver=2.17.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='give-donation-summary-style-frontend-css'
+		                href='https://humanlibrary.org/wp-content/plugins/give/assets/dist/css/give-donation-summary.css?ver=2.17.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='give_recurring_css-css'
+		                href='https://humanlibrary.org/wp-content/plugins/give-recurring/assets/css/give-recurring.css?ver=1.13.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-Defaults-css'
+		                href='https://humanlibrary.org/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-icomoon-material-24x24-css'
+		                href='https://humanlibrary.org/wp-content/uploads/smile_fonts/icomoon-material-24x24/icomoon-material-24x24.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-icomoon-free-social-contact-16x16-css'
+		                href='https://humanlibrary.org/wp-content/uploads/smile_fonts/icomoon-free-social-contact-16x16/icomoon-free-social-contact-16x16.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-icomoon-icomoonfree-16x16-css'
+		                href='https://humanlibrary.org/wp-content/uploads/smile_fonts/icomoon-icomoonfree-16x16/icomoon-icomoonfree-16x16.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-icomoon-numbers-32x32-css'
+		                href='https://humanlibrary.org/wp-content/uploads/smile_fonts/icomoon-numbers-32x32/icomoon-numbers-32x32.css?ver=5.8.2'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='js_composer_front-css'
+		                href='https://humanlibrary.org/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.6.0.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='dt-web-fonts-css'
+		                href='https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:200,300,400,500,600,700%7COpen+Sans:400,600,700%7CRoboto:400,600,700%7CHLFont:400,600,700%7CMontserrat:300,400,600,700'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='dt-main-css'
+		                href='https://humanlibrary.org/wp-content/themes/dt-the7/css/main.min.css?ver=10.1.0.1'
+		                type='text/css' media='all' />
+
+		            <link rel='stylesheet' id='the7-font-css'
+		                href='https://humanlibrary.org/wp-content/themes/dt-the7/fonts/icomoon-the7-font/icomoon-the7-font.min.css?ver=10.1.0.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-awesome-fonts-css'
+		                href='https://humanlibrary.org/wp-content/themes/dt-the7/fonts/FontAwesome/css/all.min.css?ver=10.1.0.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-awesome-fonts-back-css'
+		                href='https://humanlibrary.org/wp-content/themes/dt-the7/fonts/FontAwesome/back-compat.min.css?ver=10.1.0.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-custom-scrollbar-css'
+		                href='https://humanlibrary.org/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=10.1.0.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-wpbakery-css'
+		                href='https://humanlibrary.org/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=10.1.0.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-core-css'
+		                href='https://humanlibrary.org/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.5.7.1'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-css-vars-css'
+		                href='https://humanlibrary.org/wp-content/uploads/the7-css/css-vars.css?ver=4acad9126d54'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='dt-custom-css'
+		                href='https://humanlibrary.org/wp-content/uploads/the7-css/custom.css?ver=4acad9126d54'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='dt-media-css'
+		                href='https://humanlibrary.org/wp-content/uploads/the7-css/media.css?ver=4acad9126d54' type='text/css'
+		                media='all' />
+		            <link rel='stylesheet' id='the7-mega-menu-css'
+		                href='https://humanlibrary.org/wp-content/uploads/the7-css/mega-menu.css?ver=4acad9126d54'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-elements-albums-portfolio-css'
+		                href='https://humanlibrary.org/wp-content/uploads/the7-css/the7-elements-albums-portfolio.css?ver=4acad9126d54'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='the7-elements-css'
+		                href='https://humanlibrary.org/wp-content/uploads/the7-css/post-type-dynamic.css?ver=4acad9126d54'
+		                type='text/css' media='all' />
+		            <link rel='stylesheet' id='style-css'
+		                href='https://humanlibrary.org/wp-content/themes/dt-the7/style.css?ver=10.1.0.1' type='text/css'
+		                media='all' />
+		            <link rel='stylesheet' id='ultimate-vc-addons-google-fonts-css'
+		                href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:regular,700' type='text/css'
+		                media='all' />
+		            <link rel='stylesheet' id='ultimate-vc-addons-style-min-css'
+		                href='https://humanlibrary.org/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/ultimate.min.css?ver=3.19.11'
+		                type='text/css' media='all' />
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'>
+		            </script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
+		                id='jquery-migrate-js'></script>
+		            <script type='text/javascript' id='sgr_main-js-extra'>
+		            /* <![CDATA[ */
+		            var sgr_main = {
+		                "sgr_site_key": "6LfR1cAZAAAAAD1TpEXE5cuYiX88QLK0tEvuCuFs"
+		            };
+		            /* ]]> */
+		            </script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/simple-google-recaptcha/sgr.js?ver=1623049174'
+		                id='sgr_main-js'></script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'>
+		            </script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1'
+		                id='jquery-ui-datepicker-js'></script>
+		            <script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+		            jQuery(document).ready(function(jQuery) {
+		                jQuery.datepicker.setDefaults({
+		                    "closeText": "Close",
+		                    "currentText": "Today",
+		                    "monthNames": ["January", "February", "March", "April", "May", "June", "July",
+		                        "August", "September", "October", "November", "December"
+		                    ],
+		                    "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+		                        "Oct", "Nov", "Dec"
+		                    ],
+		                    "nextText": "Next",
+		                    "prevText": "Previous",
+		                    "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+		                        "Saturday"
+		                    ],
+		                    "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+		                    "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+		                    "dateFormat": "dd\/mm\/yy",
+		                    "firstDay": 1,
+		                    "isRTL": false
+		                });
+		            });
+		            </script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/custom-datepicker-nmr/js/nmr-datepicker.js?ver=5.8.2'
+		                id='nmr_datepicker-js'></script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.8'
+		                async id='tp-tools-js'></script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.8'
+		                async id='revmin-js'></script>
+		            <script type='text/javascript' id='give-stripe-js-js-extra'>
+		            /* <![CDATA[ */
+		            var give_stripe_vars = {
+		                "zero_based_currency": "",
+		                "zero_based_currencies_list": ["JPY", "KRW", "CLP", "ISK", "BIF", "DJF", "GNF", "KHR", "KPW",
+		                    "LAK", "LKR", "MGA", "MZN", "VUV"
+		                ],
+		                "sitename": "The Human Library Organization",
+		                "checkoutBtnTitle": "Donate",
+		                "publishable_key": "pk_live_8MGfMquLN4XgvZgQgWOpYnTj",
+		                "checkout_image": "",
+		                "checkout_address": "on",
+		                "checkout_processing_text": "Processing Donation...",
+		                "give_version": "2.17.1",
+		                "cc_fields_format": "multi",
+		                "card_number_placeholder_text": "Card Number",
+		                "card_cvc_placeholder_text": "CVC",
+		                "donate_button_text": "Donate Now",
+		                "element_font_styles": {
+		                    "cssSrc": false
+		                },
+		                "element_base_styles": {
+		                    "color": "#32325D",
+		                    "fontWeight": 500,
+		                    "fontSize": "16px",
+		                    "fontSmoothing": "antialiased",
+		                    "::placeholder": {
+		                        "color": "#222222"
+		                    },
+		                    ":-webkit-autofill": {
+		                        "color": "#e39f48"
+		                    }
+		                },
+		                "element_complete_styles": {},
+		                "element_empty_styles": {},
+		                "element_invalid_styles": {},
+		                "float_labels": "",
+		                "base_country": "US",
+		                "preferred_locale": "en",
+		                "stripe_card_update": "",
+		                "stripe_becs_update": ""
+		            };
+		            /* ]]> */
+		            </script>
+		            <script type='text/javascript' src='https://js.stripe.com/v3/?ver=2.17.1' id='give-stripe-js-js'></script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/give/assets/dist/js/give-stripe.js?ver=2.17.1'
+		                id='give-stripe-onpage-js-js'></script>
+		            <script type='text/javascript' id='give-js-extra'>
+		            /* <![CDATA[ */
+		            var give_global_vars = {
+		                "ajaxurl": "https:\/\/humanlibrary.org\/wp-admin\/admin-ajax.php",
+		                "checkout_nonce": "3c2506d21b",
+		                "currency": "USD",
+		                "currency_sign": "$",
+		                "currency_pos": "before",
+		                "thousands_separator": ",",
+		                "decimal_separator": ".",
+		                "no_gateway": "Please select a payment method.",
+		                "bad_minimum": "The minimum custom donation amount for this form is",
+		                "bad_maximum": "The maximum custom donation amount for this form is",
+		                "general_loading": "Loading...",
+		                "purchase_loading": "Please Wait...",
+		                "textForOverlayScreen": "<h3>Processing...<\/h3><p>This will only take a second!<\/p>",
+		                "number_decimals": "2",
+		                "is_test_mode": "",
+		                "give_version": "2.17.1",
+		                "magnific_options": {
+		                    "main_class": "give-modal",
+		                    "close_on_bg_click": false
+		                },
+		                "form_translation": {
+		                    "payment-mode": "Please select payment mode.",
+		                    "give_first": "Please enter your first name.",
+		                    "give_last": "Please enter your last name.",
+		                    "give_email": "Please enter a valid email address.",
+		                    "give_user_login": "Invalid email address or username.",
+		                    "give_user_pass": "Enter a password.",
+		                    "give_user_pass_confirm": "Enter the password confirmation.",
+		                    "give_agree_to_terms": "You must agree to the terms and conditions."
+		                },
+		                "confirm_email_sent_message": "Please check your email and click on the link to access your complete donation history.",
+		                "ajax_vars": {
+		                    "ajaxurl": "https:\/\/humanlibrary.org\/wp-admin\/admin-ajax.php",
+		                    "ajaxNonce": "baaa7abc46",
+		                    "loading": "Loading",
+		                    "select_option": "Please select an option",
+		                    "default_gateway": "stripe",
+		                    "permalinks": "1",
+		                    "number_decimals": 2
+		                },
+		                "cookie_hash": "1a63c858b4bc5d2f77ae5796eadf6b5d",
+		                "session_nonce_cookie_name": "wp-give_session_reset_nonce_1a63c858b4bc5d2f77ae5796eadf6b5d",
+		                "session_cookie_name": "wp-give_session_1a63c858b4bc5d2f77ae5796eadf6b5d",
+		                "delete_session_nonce_cookie": "0"
+		            };
+		            var giveApiSettings = {
+		                "root": "https:\/\/humanlibrary.org\/wp-json\/give-api\/v2\/",
+		                "rest_base": "give-api\/v2"
+		            };
+		            /* ]]> */
+		            </script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/give/assets/dist/js/give.js?ver=2.17.1' id='give-js'>
+		            </script>
+		            <script type='text/javascript' id='give_recurring_script-js-extra'>
+		            /* <![CDATA[ */
+		            var Give_Recurring_Vars = {
+		                "email_access": "1",
+		                "pretty_intervals": {
+		                    "1": "Every",
+		                    "2": "Every two",
+		                    "3": "Every three",
+		                    "4": "Every four",
+		                    "5": "Every five",
+		                    "6": "Every six"
+		                },
+		                "pretty_periods": {
+		                    "day": "Daily",
+		                    "week": "Weekly",
+		                    "month": "Monthly",
+		                    "quarter": "Quarterly",
+		                    "half-year": "Semi-Annually",
+		                    "year": "Yearly"
+		                },
+		                "messages": {
+		                    "daily_forbidden": "The selected payment method does not support daily recurring giving. Please select another payment method or supported giving frequency.",
+		                    "confirm_cancel": "Are you sure you want to cancel this subscription?"
+		                },
+		                "multi_level_message_pre_text": "You have chosen to donate"
+		            };
+		            /* ]]> */
+		            </script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/give-recurring/assets/js/give-recurring.js?ver=1.13.1'
+		                id='give_recurring_script-js'></script>
+		            <script type='text/javascript' id='dt-above-fold-js-extra'>
+		            /* <![CDATA[ */
+		            var dtLocal = {
+		                "themeUrl": "https:\/\/humanlibrary.org\/wp-content\/themes\/dt-the7",
+		                "passText": "To view this protected post, enter the password below:",
+		                "moreButtonText": {
+		                    "loading": "Loading...",
+		                    "loadMore": "Load more"
+		                },
+		                "postID": "17",
+		                "ajaxurl": "https:\/\/humanlibrary.org\/wp-admin\/admin-ajax.php",
+		                "REST": {
+		                    "baseUrl": "https:\/\/humanlibrary.org\/wp-json\/the7\/v1",
+		                    "endpoints": {
+		                        "sendMail": "\/send-mail"
+		                    }
+		                },
+		                "contactMessages": {
+		                    "required": "One or more fields have an error. Please check and try again.",
+		                    "terms": "Please accept the privacy policy.",
+		                    "fillTheCaptchaError": "Please, fill the captcha."
+		                },
+		                "captchaSiteKey": "",
+		                "ajaxNonce": "52fe5ec9cc",
+		                "pageData": {
+		                    "type": "page",
+		                    "template": "page",
+		                    "layout": null
+		                },
+		                "themeSettings": {
+		                    "smoothScroll": "off",
+		                    "lazyLoading": false,
+		                    "accentColor": {
+		                        "mode": "solid",
+		                        "color": "#4f5b66"
+		                    },
+		                    "desktopHeader": {
+		                        "height": 180
+		                    },
+		                    "ToggleCaptionEnabled": "disabled",
+		                    "ToggleCaption": "Navigation",
+		                    "floatingHeader": {
+		                        "showAfter": 240,
+		                        "showMenu": true,
+		                        "height": 60,
+		                        "logo": {
+		                            "showLogo": true,
+		                            "html": "<img class=\" preload-me\" src=\"https:\/\/humanlibrary.org\/wp-content\/uploads\/2019\/01\/Human-Library-Floating-Logo-190x40.png\" srcset=\"https:\/\/humanlibrary.org\/wp-content\/uploads\/2019\/01\/Human-Library-Floating-Logo-190x40.png 190w, https:\/\/humanlibrary.org\/wp-content\/uploads\/2019\/01\/Human-Library-Floating-Logo-190x40.png 190w\" width=\"190\" height=\"40\"   sizes=\"190px\" alt=\"The Human Library Organization\" \/>",
+		                            "url": "https:\/\/humanlibrary.org\/"
+		                        }
+		                    },
+		                    "topLine": {
+		                        "floatingTopLine": {
+		                            "logo": {
+		                                "showLogo": false,
+		                                "html": ""
+		                            }
+		                        }
+		                    },
+		                    "mobileHeader": {
+		                        "firstSwitchPoint": 990,
+		                        "secondSwitchPoint": 778,
+		                        "firstSwitchPointHeight": 80,
+		                        "secondSwitchPointHeight": 60,
+		                        "mobileToggleCaptionEnabled": "disabled",
+		                        "mobileToggleCaption": "Menu"
+		                    },
+		                    "stickyMobileHeaderFirstSwitch": {
+		                        "logo": {
+		                            "html": "<img class=\" preload-me\" src=\"https:\/\/humanlibrary.org\/wp-content\/uploads\/2019\/01\/Human-Library-Floating-Logo-190x40.png\" srcset=\"https:\/\/humanlibrary.org\/wp-content\/uploads\/2019\/01\/Human-Library-Floating-Logo-190x40.png 190w, https:\/\/humanlibrary.org\/wp-content\/uploads\/2019\/01\/Human-Library-Floating-Logo-190x40.png 190w\" width=\"190\" height=\"40\"   sizes=\"190px\" alt=\"The Human Library Organization\" \/>"
+		                        }
+		                    },
+		                    "stickyMobileHeaderSecondSwitch": {
+		                        "logo": {
+		                            "html": "<img class=\" preload-me\" src=\"https:\/\/humanlibrary.org\/wp-content\/uploads\/HL_logo_500x94px.jpg\" srcset=\"https:\/\/humanlibrary.org\/wp-content\/uploads\/HL_logo_500x94px.jpg 500w, https:\/\/humanlibrary.org\/wp-content\/uploads\/HL_logo_500x94px.jpg 500w\" width=\"500\" height=\"94\"   sizes=\"500px\" alt=\"The Human Library Organization\" \/>"
+		                        }
+		                    },
+		                    "content": {
+		                        "textColor": "#8c95a2",
+		                        "headerColor": "#1f365c"
+		                    },
+		                    "sidebar": {
+		                        "switchPoint": 990
+		                    },
+		                    "boxedWidth": "1340px",
+		                    "stripes": {
+		                        "stripe1": {
+		                            "textColor": "#dbdbdb",
+		                            "headerColor": "#ff9f1a"
+		                        },
+		                        "stripe2": {
+		                            "textColor": "#333333",
+		                            "headerColor": "#203961"
+		                        },
+		                        "stripe3": {
+		                            "textColor": "#000000",
+		                            "headerColor": "#203961"
+		                        }
+		                    }
+		                },
+		                "VCMobileScreenWidth": "778"
+		            };
+		            var dtShare = {
+		                "shareButtonText": {
+		                    "facebook": "Share on Facebook",
+		                    "twitter": "Tweet",
+		                    "pinterest": "Pin it",
+		                    "linkedin": "Share on Linkedin",
+		                    "whatsapp": "Share on Whatsapp"
+		                },
+		                "overlayOpacity": "80"
+		            };
+		            /* ]]> */
+		            </script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/themes/dt-the7/js/above-the-fold.min.js?ver=10.1.0.1'
+		                id='dt-above-fold-js'></script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate.min.js?ver=3.19.11'
+		                id='ultimate-vc-addons-script-js'></script>
+		            <script type='text/javascript'
+		                src='https://humanlibrary.org/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=3.19.11'
+		                id='ultimate-vc-addons-row-bg-js'></script>
+		            <link rel="https://api.w.org/" href="https://humanlibrary.org/wp-json/" />
+		            <link rel="alternate" type="application/json" href="https://humanlibrary.org/wp-json/wp/v2/pages/17" />
+		            <link rel="EditURI" type="application/rsd+xml" title="RSD"
+		                href="https://humanlibrary.org/xmlrpc.php?rsd" />
+		            <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+		                href="https://humanlibrary.org/wp-includes/wlwmanifest.xml" />
+		            <meta name="generator" content="WordPress 5.8.2" />
+		            <link rel='shortlink' href='https://humanlibrary.org/?p=17' />
+		            <link rel="alternate" type="application/json+oembed"
+		                href="https://humanlibrary.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumanlibrary.org%2Fabout%2Fgallery%2F" />
+		            <link rel="alternate" type="text/xml+oembed"
+		                href="https://humanlibrary.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhumanlibrary.org%2Fabout%2Fgallery%2F&#038;format=xml" />
+		            <!-- Custom Facebook Feed JS vars -->
+		            <script type="text/javascript">
+		            var cffsiteurl = "https://humanlibrary.org/wp-content/plugins";
+		            var cffajaxurl = "https://humanlibrary.org/wp-admin/admin-ajax.php";
+
+
+		            var cfflinkhashtags = "false";
+		            </script>
+		            <meta name="generator" content="Give v2.17.1" />
+		            <meta name="generator"
+		                content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+		            <meta name="generator"
+		                content="Powered by Slider Revolution 6.5.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+		            <script type="text/javascript" id="the7-loader-script">
+		            document.addEventListener("DOMContentLoaded", function(event) {
+		                var load = document.getElementById("load");
+		                if (!load.classList.contains('loader-removed')) {
+		                    var removeLoading = setTimeout(function() {
+		                        load.className += " loader-removed";
+		                    }, 300);
+		                }
+		            });
+		            </script>
+
+		            <style type="text/css" data-type="vc_shortcodes-custom-css">
+		            .vc_custom_1490533921156 {
+		                padding-top: 70px !important;
+		                padding-bottom: 70px !important;
+		            }
+		            </style><noscript>
+		                <style>
+		                .wpb_animate_when_almost_visible {
+		                    opacity: 1;
+		                }
+		                </style>
+		            </noscript>
+		            <script id="mcjs">
+		            ! function(c, h, i, m, p) {
+		                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode
+		                    .insertBefore(m, p)
+		            }(document, "script",
+		                "https://chimpstatic.com/mcjs-connected/js/users/9666782fa54ace89471f72440/58fa3654f6c3ca9931cc50fb5.js"
+		                );
+		            </script>
+
+
+		            <script>
+		            (function(i, s, o, g, r, a, m) {
+		                i['GoogleAnalyticsObject'] = r;
+		                i[r] = i[r] || function() {
+		                    (i[r].q = i[r].q || []).push(arguments)
+		                }, i[r].l = 1 * new Date();
+		                a = s.createElement(o),
+		                    m = s.getElementsByTagName(o)[0];
+		                a.async = 1;
+		                a.src = g;
+		                m.parentNode.insertBefore(a, m)
+		            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		            ga('create', 'UA-4219684-3', 'auto');
+		            ga('send', 'pageview');
+		            </script>
+
+		            <div id="fb-root"></div>
+		            <script>
+		            (function(d, s, id) {
+		                var js, fjs = d.getElementsByTagName(s)[0];
+		                if (d.getElementById(id)) return;
+		                js = d.createElement(s);
+		                js.id = id;
+		                js.src =
+		                    'https://connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v3.2&appId=606969443079111&autoLogAppEvents=1';
+		                fjs.parentNode.insertBefore(js, fjs);
+		            }(document, 'script', 'facebook-jssdk'));
+		            </script>
+
+		            <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+		            <script type="text/javascript"
+		                src="//www.FreePrivacyPolicy.com/cookie-consent/releases/3.0.0/cookie-consent.js"></script>
+		            <script type="text/javascript">
+		            document.addEventListener('DOMContentLoaded', function() {
+		                cookieconsent.run({
+		                    "notice_banner_type": "simple",
+		                    "consent_type": "express",
+		                    "palette": "dark",
+		                    "change_preferences_selector": "#changePreferences",
+		                    "language": "en",
+		                    "website_name": "humanlibrary.org",
+		                    "cookies_policy_url": "https://humanlibrary.org/data-policy/"
+		                });
+		            });
+		            </script>
+
+
+		            <div class="the7-spinner">
+		                <div class="the7-spinner-ring-bg"></div>
+		                <div class="the7-spinner-ring"></div>
+		            </div>
+		        </div>
+		    </div>
+
+
+
+
+
+
+		    <div id="main" class="sidebar-none sidebar-divider-off">
+
+
+		        <div class="main-gradient"></div>
+		        <div class="wf-wrap">
+		            <div class="wf-container-main">
+
+
+
+
+		                <div id="content" class="content" role="main">
+
+		                    <div class="vc_row wpb_row vc_row-fluid vc_custom_1490533921156">
+		                        <div class="wpb_column vc_column_container vc_col-sm-6">
+		                            <div class="vc_column-inner">
+		                                <div class="wpb_wrapper">
+		                                    <div id="ultimate-heading-192561c34baf4bfb5"
+		                                        class="uvc-heading ult-adjust-bottom-margin ultimate-heading-192561c34baf4bfb5 uvc-2319 "
+		                                        data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+		                                        <div class="uvc-heading-spacer no_spacer" style="top"></div>
+		                                        <div class="uvc-main-heading ult-responsive"
+		                                            data-ultimate-target='.uvc-heading.ultimate-heading-192561c34baf4bfb5 h2'
+		                                            data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:32px;"}'>
+		                                            <h2 style="font-family:&#039;Open Sans Condensed&#039;;font-weight:700;">
+		                                                Freshers Party Batch 2019-22</h2>
+		                                        </div>
+		                                    </div>
+		                                    <div class="dt-shortcode with-isotope">
+		                                        <div class="wf-container dt-albums-shortcode jgrid-shortcode  loading-effect-none iso-grid jg-container description-on-hover hover-style-two hover-fade content-align-centre"
+		                                            data-padding="20px" data-cur-page="1" data-posts-per-page="-1"
+		                                            data-target-height="240px">
+		                                            <div class="wf-cell" data-post-id="184"
+		                                                data-date="2016-01-30T14:37:11+01:00" data-name="Freshers Batch 2019-22">
+		                                                <article
+		                                                    class="post post-184 dt_gallery type-dt_gallery status-publish hentry dt_gallery_category-smukfest dt_gallery_category-163 text-centered">
+
+		                                                    <figure class="rollover-project links-hovers-disabled">
+		                                                        <a href="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o.jpg"
+		                                                            class="rollover-click-target dt-gallery-pswp layzr-bg"
+		                                                            aria-label="Gallery image"
+		                                                            title="A book with his reader"><img
+		                                                                src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20555%20312&#39;%2F%3E"
+		                                                                data-src="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-555x312.jpg"
+		                                                                data-srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-555x312.jpg 555w, https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-1110x624.jpg 1110w"
+		                                                                class="preload-me jgrid-lazy-load" alt=""
+		                                                                title="A book with his reader" width="555"
+		                                                                height="312" /></a>
+		                                                        <div class="dt-gallery-container dt-album"><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o.jpg"
+		                                                                title="A book with his reader" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39408843_1807335439334873_150786796999933952_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39442840_1807336549334762_9220029689010061312_o.jpg"
+		                                                                title="Listening in on the book" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39442840_1807336549334762_9220029689010061312_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39453715_1807336509334766_24689271608705024_o.jpg"
+		                                                                title="A learning experience" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39453715_1807336509334766_24689271608705024_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39502223_1807337126001371_8421349029618647040_o.jpg"
+		                                                                title="Cut it out" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39502223_1807337126001371_8421349029618647040_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39507331_1807336346001449_408408431586705408_o.jpg"
+		                                                                title="Having fun at the Human Library with a body modified"
+		                                                                class="dt-pswp-item" data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39507331_1807336346001449_408408431586705408_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39441386_1807336982668052_3667339799435411456_o.jpg"
+		                                                                title="On loan" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39441386_1807336982668052_3667339799435411456_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39501135_1807333536001730_3324697792575700992_o.jpg"
+		                                                                title="Two friends sharing a good book"
+		                                                                class="dt-pswp-item" data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39501135_1807333536001730_3324697792575700992_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39538744_1807336289334788_4515382616744001536_o.jpg"
+		                                                                title="Another moment" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39538744_1807336289334788_4515382616744001536_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39454342_1807336889334728_1164881893309546496_o.jpg"
+		                                                                title="Filling in a book review" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39454342_1807336889334728_1164881893309546496_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39400730_1807334962668254_698389487947874304_o.jpg"
+		                                                                title="I hear you" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39400730_1807334962668254_698389487947874304_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39514823_1807337109334706_8027558429029564416_o.jpg"
+		                                                                title="Someone is listening" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39514823_1807337109334706_8027558429029564416_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39453859_1807336256001458_7650972745873752064_o.jpg"
+		                                                                title="Benched" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39453859_1807336256001458_7650972745873752064_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39500529_1807337009334716_3203004150556131328_o.jpg"
+		                                                                title="Librarian guiding a reader"
+		                                                                class="dt-pswp-item" data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39500529_1807337009334716_3203004150556131328_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39441383_1807336866001397_3438842436867063808_o.jpg"
+		                                                                title="A hairy day" class="dt-pswp-item"
+		                                                                data-large_image_width="1800"
+		                                                                data-large_image_height="1012"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39441383_1807336866001397_3438842436867063808_o/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/2016/01/39453454_1807336749334742_8221766099851542528_o.jpg"
+		                                                                title="Never a dull moment" class="dt-pswp-item"
+		                                                                data-large_image_width="1747"
+		                                                                data-large_image_height="982"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39453454_1807336749334742_8221766099851542528_o/"
+		                                                                aria-label="Gallery image"></a></div>
+		                                                        <figcaption class="rollover-content">
+		                                                            <span class="rollover-thumbnails"><span
+		                                                                    class="r-thumbn-1"><img class="preload-me"
+		                                                                        src="https://humanlibrary.org/wp-content/uploads/2016/01/39453715_1807336509334766_24689271608705024_o-150x150.jpg"
+		                                                                        srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39453715_1807336509334766_24689271608705024_o-150x150.jpg 150w"
+		                                                                        sizes="150px" alt=""
+		                                                                        width="90" /><i></i></span><span
+		                                                                    class="r-thumbn-2"><img class="preload-me"
+		                                                                        src="https://humanlibrary.org/wp-content/uploads/2016/01/39442840_1807336549334762_9220029689010061312_o-150x150.jpg"
+		                                                                        srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39442840_1807336549334762_9220029689010061312_o-150x150.jpg 150w"
+		                                                                        sizes="150px" alt=""
+		                                                                        width="90" /><i></i></span><span
+		                                                                    class="r-thumbn-3"><img class="preload-me"
+		                                                                        src="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-150x150.jpg"
+		                                                                        srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-150x150.jpg 150w"
+		                                                                        sizes="150px" alt=""
+		                                                                        width="90" /><i></i></span></span>
+		                                                            <div class="rollover-content-container">
+		                                                                <h3 class="entry-title"><a
+		                                                                        href="https://humanlibrary.org/hlo/smukfest2018/"
+		                                                                        title="Freshers Batch 2019-22"
+		                                                                        class="dt-trigger-first-pswp">Freshers Party</a></h3>
+		                                                                <p>Photos by Frames: Photography Society of VIPS</p>
+		                                                            </div>
+		                                                        </figcaption>
+		                                                    </figure>
+		                                                </article>
+
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="wpb_column vc_column_container vc_col-sm-6">
+		                            <div class="vc_column-inner">
+		                                <div class="wpb_wrapper">
+		                                    <div id="ultimate-heading-642261c34baf801e7"
+		                                        class="uvc-heading ult-adjust-bottom-margin ultimate-heading-642261c34baf801e7 uvc-2224 "
+		                                        data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+		                                        <div class="uvc-heading-spacer no_spacer" style="top"></div>
+		                                        <div class="uvc-main-heading ult-responsive"
+		                                            data-ultimate-target='.uvc-heading.ultimate-heading-642261c34baf801e7 h2'
+		                                            data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:32px;"}'>
+		                                            <h2 style="font-family:&#039;Open Sans Condensed&#039;;font-weight:700;">
+		                                                AChievments Gallery</h2>
+		                                        </div>
+		                                    </div>
+		                                    <div class="dt-shortcode with-isotope">
+		                                        <div class="wf-container dt-albums-shortcode jgrid-shortcode  loading-effect-none iso-grid jg-container description-on-hover hover-style-two hover-fade content-align-centre"
+		                                            data-padding="20px" data-cur-page="1" data-posts-per-page="-1"
+		                                            data-target-height="240px">
+		                                            <div class="wf-cell" data-post-id="16079"
+		                                                data-date="2019-01-27T20:43:57+01:00" data-name="Book Awards 2018">
+		                                                <article
+		                                                    class="post post-16079 dt_gallery type-dt_gallery status-publish hentry dt_gallery_category-book-awards dt_gallery_category-151 media-wide text-centered">
+
+		                                                    <figure class="rollover-project links-hovers-disabled">
+		                                                        <a href="https://humanlibrary.org/wp-content/uploads/DSC08745.jpg"
+		                                                            class="rollover-click-target dt-gallery-pswp layzr-bg"
+		                                                            aria-label="Gallery image" title="DSC08745"><img
+		                                                                src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20554%20312&#39;%2F%3E"
+		                                                                data-src="https://humanlibrary.org/wp-content/uploads/DSC08745-554x312.jpg"
+		                                                                data-srcset="https://humanlibrary.org/wp-content/uploads/DSC08745-554x312.jpg 554w, https://humanlibrary.org/wp-content/uploads/DSC08745-1108x624.jpg 1108w"
+		                                                                class="preload-me jgrid-lazy-load" alt=""
+		                                                                title="DSC08745" width="554" height="312" /></a>
+		                                                        <div class="dt-gallery-container dt-album"><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC08745.jpg"
+		                                                                title="DSC08745" class="dt-pswp-item"
+		                                                                data-large_image_width="4761"
+		                                                                data-large_image_height="2679"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08745/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09248.jpg"
+		                                                                title="DSC09248" class="dt-pswp-item"
+		                                                                data-large_image_width="5723"
+		                                                                data-large_image_height="3220"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09248/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09219.jpg"
+		                                                                title="DSC09219" class="dt-pswp-item"
+		                                                                data-large_image_width="4516"
+		                                                                data-large_image_height="2540"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09219/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/IMG_2584.jpg"
+		                                                                title="IMG_2584" class="dt-pswp-item"
+		                                                                data-large_image_width="1920"
+		                                                                data-large_image_height="1080"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/img_2584/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC08956.jpg"
+		                                                                title="DSC08956" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08956/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC08906.jpg"
+		                                                                title="DSC08906" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08906/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC08991.jpg"
+		                                                                title="DSC08991" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08991/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC08977.jpg"
+		                                                                title="DSC08977" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08977/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC08990.jpg"
+		                                                                title="DSC08990" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08990/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09034.jpg"
+		                                                                title="DSC09034" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09034/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC08916.jpg"
+		                                                                title="DSC08916" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08916/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09046.jpg"
+		                                                                title="DSC09046" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09046/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09066.jpg"
+		                                                                title="DSC09066" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09066/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09082.jpg"
+		                                                                title="DSC09082" class="dt-pswp-item"
+		                                                                data-large_image_width="5553"
+		                                                                data-large_image_height="3124"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09082/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09104.jpg"
+		                                                                title="DSC09104" class="dt-pswp-item"
+		                                                                data-large_image_width="5104"
+		                                                                data-large_image_height="2872"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09104/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09021.jpg"
+		                                                                title="DSC09021" class="dt-pswp-item"
+		                                                                data-large_image_width="5051"
+		                                                                data-large_image_height="2842"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09021/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09125.jpg"
+		                                                                title="DSC09125" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09125/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09161.jpg"
+		                                                                title="DSC09161" class="dt-pswp-item"
+		                                                                data-large_image_width="5673"
+		                                                                data-large_image_height="3192"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09161/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09162.jpg"
+		                                                                title="DSC09162" class="dt-pswp-item"
+		                                                                data-large_image_width="6000"
+		                                                                data-large_image_height="3376"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09162/"
+		                                                                aria-label="Gallery image"></a><a
+		                                                                href="https://humanlibrary.org/wp-content/uploads/DSC09186.jpg"
+		                                                                title="DSC09186" class="dt-pswp-item"
+		                                                                data-large_image_width="4422"
+		                                                                data-large_image_height="2488"
+		                                                                data-dt-img-description=""
+		                                                                data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09186/"
+		                                                                aria-label="Gallery image"></a></div>
+		                                                        <figcaption class="rollover-content">
+		                                                            <span class="rollover-thumbnails"><span
+		                                                                    class="r-thumbn-1"><img class="preload-me"
+		                                                                        src="https://humanlibrary.org/wp-content/uploads/DSC09219-150x150.jpg"
+		                                                                        srcset="https://humanlibrary.org/wp-content/uploads/DSC09219-150x150.jpg 150w"
+		                                                                        sizes="150px" alt=""
+		                                                                        width="90" /><i></i></span><span
+		                                                                    class="r-thumbn-2"><img class="preload-me"
+		                                                                        src="https://humanlibrary.org/wp-content/uploads/DSC09248-150x150.jpg"
+		                                                                        srcset="https://humanlibrary.org/wp-content/uploads/DSC09248-150x150.jpg 150w"
+		                                                                        sizes="150px" alt=""
+		                                                                        width="90" /><i></i></span><span
+		                                                                    class="r-thumbn-3"><img class="preload-me"
+		                                                                        src="https://humanlibrary.org/wp-content/uploads/DSC08745-150x150.jpg"
+		                                                                        srcset="https://humanlibrary.org/wp-content/uploads/DSC08745-150x150.jpg 150w"
+		                                                                        sizes="150px" alt=""
+		                                                                        width="90" /><i></i></span></span>
+		                                                            <div class="rollover-content-container">
+		                                                                <h3 class="entry-title"><a
+		                                                                        href="https://humanlibrary.org/hlo/book-awards-2018/"
+		                                                                        title="Book Awards 2018"
+		                                                                        class="dt-trigger-first-pswp">Achievments Gallery</a></h3>
+		                                                                <p>Photos by Yash Kumar</p>
+		                                                            </div>
+		                                                        </figcaption>
+		                                                    </figure>
+		                                                </article>
+
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+							<div id="main" class="sidebar-none sidebar-divider-off">
+
+
+<div class="main-gradient"></div>
+<div class="wf-wrap">
+	<div class="wf-container-main">
+
+
+
+
+		<div id="content" class="content" role="main">
+
+			<div class="vc_row wpb_row vc_row-fluid vc_custom_1490533921156">
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+							<div id="ultimate-heading-192561c34baf4bfb5"
+								class="uvc-heading ult-adjust-bottom-margin ultimate-heading-192561c34baf4bfb5 uvc-2319 "
+								data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+								<div class="uvc-heading-spacer no_spacer" style="top"></div>
+								<div class="uvc-main-heading ult-responsive"
+									data-ultimate-target='.uvc-heading.ultimate-heading-192561c34baf4bfb5 h2'
+									data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:32px;"}'>
+									<h2 style="font-family:&#039;Open Sans Condensed&#039;;font-weight:700;">
+										Beginning of the Project</h2>
+								</div>
+							</div>
+							<div class="dt-shortcode with-isotope">
+								<div class="wf-container dt-albums-shortcode jgrid-shortcode  loading-effect-none iso-grid jg-container description-on-hover hover-style-two hover-fade content-align-centre"
+									data-padding="20px" data-cur-page="1" data-posts-per-page="-1"
+									data-target-height="240px">
+									<div class="wf-cell" data-post-id="184"
+										data-date="2016-01-30T14:37:11+01:00" data-name="Freshers Batch 2019-22">
+										<article
+											class="post post-184 dt_gallery type-dt_gallery status-publish hentry dt_gallery_category-smukfest dt_gallery_category-163 text-centered">
+
+											<figure class="rollover-project links-hovers-disabled">
+												<a href="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o.jpg"
+													class="rollover-click-target dt-gallery-pswp layzr-bg"
+													aria-label="Gallery image"
+													title="A book with his reader"><img
+														src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20555%20312&#39;%2F%3E"
+														data-src="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-555x312.jpg"
+														data-srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-555x312.jpg 555w, https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-1110x624.jpg 1110w"
+														class="preload-me jgrid-lazy-load" alt=""
+														title="A book with his reader" width="555"
+														height="312" /></a>
+												<div class="dt-gallery-container dt-album"><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o.jpg"
+														title="A book with his reader" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39408843_1807335439334873_150786796999933952_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39442840_1807336549334762_9220029689010061312_o.jpg"
+														title="Listening in on the book" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39442840_1807336549334762_9220029689010061312_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39453715_1807336509334766_24689271608705024_o.jpg"
+														title="A learning experience" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39453715_1807336509334766_24689271608705024_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39502223_1807337126001371_8421349029618647040_o.jpg"
+														title="Cut it out" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39502223_1807337126001371_8421349029618647040_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39507331_1807336346001449_408408431586705408_o.jpg"
+														title="Having fun at the Human Library with a body modified"
+														class="dt-pswp-item" data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39507331_1807336346001449_408408431586705408_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39441386_1807336982668052_3667339799435411456_o.jpg"
+														title="On loan" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39441386_1807336982668052_3667339799435411456_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39501135_1807333536001730_3324697792575700992_o.jpg"
+														title="Two friends sharing a good book"
+														class="dt-pswp-item" data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39501135_1807333536001730_3324697792575700992_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39538744_1807336289334788_4515382616744001536_o.jpg"
+														title="Another moment" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39538744_1807336289334788_4515382616744001536_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39454342_1807336889334728_1164881893309546496_o.jpg"
+														title="Filling in a book review" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39454342_1807336889334728_1164881893309546496_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39400730_1807334962668254_698389487947874304_o.jpg"
+														title="I hear you" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39400730_1807334962668254_698389487947874304_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39514823_1807337109334706_8027558429029564416_o.jpg"
+														title="Someone is listening" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39514823_1807337109334706_8027558429029564416_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39453859_1807336256001458_7650972745873752064_o.jpg"
+														title="Benched" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39453859_1807336256001458_7650972745873752064_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39500529_1807337009334716_3203004150556131328_o.jpg"
+														title="Librarian guiding a reader"
+														class="dt-pswp-item" data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39500529_1807337009334716_3203004150556131328_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39441383_1807336866001397_3438842436867063808_o.jpg"
+														title="A hairy day" class="dt-pswp-item"
+														data-large_image_width="1800"
+														data-large_image_height="1012"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39441383_1807336866001397_3438842436867063808_o/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/2016/01/39453454_1807336749334742_8221766099851542528_o.jpg"
+														title="Never a dull moment" class="dt-pswp-item"
+														data-large_image_width="1747"
+														data-large_image_height="982"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/smukfest2018/39453454_1807336749334742_8221766099851542528_o/"
+														aria-label="Gallery image"></a></div>
+												<figcaption class="rollover-content">
+													<span class="rollover-thumbnails"><span
+															class="r-thumbn-1"><img class="preload-me"
+																src="https://humanlibrary.org/wp-content/uploads/2016/01/39453715_1807336509334766_24689271608705024_o-150x150.jpg"
+																srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39453715_1807336509334766_24689271608705024_o-150x150.jpg 150w"
+																sizes="150px" alt=""
+																width="90" /><i></i></span><span
+															class="r-thumbn-2"><img class="preload-me"
+																src="https://humanlibrary.org/wp-content/uploads/2016/01/39442840_1807336549334762_9220029689010061312_o-150x150.jpg"
+																srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39442840_1807336549334762_9220029689010061312_o-150x150.jpg 150w"
+																sizes="150px" alt=""
+																width="90" /><i></i></span><span
+															class="r-thumbn-3"><img class="preload-me"
+																src="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-150x150.jpg"
+																srcset="https://humanlibrary.org/wp-content/uploads/2016/01/39408843_1807335439334873_150786796999933952_o-150x150.jpg 150w"
+																sizes="150px" alt=""
+																width="90" /><i></i></span></span>
+													<div class="rollover-content-container">
+														<h3 class="entry-title"><a
+																href="https://humanlibrary.org/hlo/smukfest2018/"
+																title="Freshers Batch 2019-22"
+																class="dt-trigger-first-pswp">The Beginning</a></h3>
+														<p>Photos by Nakul Maini</p>
+														<p>@ VIPS College</p>
+													</div>
+												</figcaption>
+											</figure>
+										</article>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+							<div id="ultimate-heading-642261c34baf801e7"
+								class="uvc-heading ult-adjust-bottom-margin ultimate-heading-642261c34baf801e7 uvc-2224 "
+								data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+								<div class="uvc-heading-spacer no_spacer" style="top"></div>
+								<div class="uvc-main-heading ult-responsive"
+									data-ultimate-target='.uvc-heading.ultimate-heading-642261c34baf801e7 h2'
+									data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:32px;"}'>
+									<h2 style="font-family:&#039;Open Sans Condensed&#039;;font-weight:700;">Anchoring by Nakul Maini</h2>
+								</div>
+							</div>
+							<div class="dt-shortcode with-isotope">
+								<div class="wf-container dt-albums-shortcode jgrid-shortcode  loading-effect-none iso-grid jg-container description-on-hover hover-style-two hover-fade content-align-centre"
+									data-padding="20px" data-cur-page="1" data-posts-per-page="-1"
+									data-target-height="240px">
+									<div class="wf-cell" data-post-id="16079"
+										data-date="2019-01-27T20:43:57+01:00" data-name="Book Awards 2018">
+										<article
+											class="post post-16079 dt_gallery type-dt_gallery status-publish hentry dt_gallery_category-book-awards dt_gallery_category-151 media-wide text-centered">
+
+											<figure class="rollover-project links-hovers-disabled">
+												<a href="https://humanlibrary.org/wp-content/uploads/DSC08745.jpg"
+													class="rollover-click-target dt-gallery-pswp layzr-bg"
+													aria-label="Gallery image" title="DSC08745"><img
+														src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20554%20312&#39;%2F%3E"
+														data-src="https://humanlibrary.org/wp-content/uploads/DSC08745-554x312.jpg"
+														data-srcset="https://humanlibrary.org/wp-content/uploads/DSC08745-554x312.jpg 554w, https://humanlibrary.org/wp-content/uploads/DSC08745-1108x624.jpg 1108w"
+														class="preload-me jgrid-lazy-load" alt=""
+														title="DSC08745" width="554" height="312" /></a>
+												<div class="dt-gallery-container dt-album"><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC08745.jpg"
+														title="DSC08745" class="dt-pswp-item"
+														data-large_image_width="4761"
+														data-large_image_height="2679"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08745/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09248.jpg"
+														title="DSC09248" class="dt-pswp-item"
+														data-large_image_width="5723"
+														data-large_image_height="3220"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09248/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09219.jpg"
+														title="DSC09219" class="dt-pswp-item"
+														data-large_image_width="4516"
+														data-large_image_height="2540"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09219/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/IMG_2584.jpg"
+														title="IMG_2584" class="dt-pswp-item"
+														data-large_image_width="1920"
+														data-large_image_height="1080"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/img_2584/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC08956.jpg"
+														title="DSC08956" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08956/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC08906.jpg"
+														title="DSC08906" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08906/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC08991.jpg"
+														title="DSC08991" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08991/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC08977.jpg"
+														title="DSC08977" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08977/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC08990.jpg"
+														title="DSC08990" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08990/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09034.jpg"
+														title="DSC09034" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09034/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC08916.jpg"
+														title="DSC08916" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc08916/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09046.jpg"
+														title="DSC09046" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09046/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09066.jpg"
+														title="DSC09066" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09066/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09082.jpg"
+														title="DSC09082" class="dt-pswp-item"
+														data-large_image_width="5553"
+														data-large_image_height="3124"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09082/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09104.jpg"
+														title="DSC09104" class="dt-pswp-item"
+														data-large_image_width="5104"
+														data-large_image_height="2872"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09104/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09021.jpg"
+														title="DSC09021" class="dt-pswp-item"
+														data-large_image_width="5051"
+														data-large_image_height="2842"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09021/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09125.jpg"
+														title="DSC09125" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09125/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09161.jpg"
+														title="DSC09161" class="dt-pswp-item"
+														data-large_image_width="5673"
+														data-large_image_height="3192"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09161/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09162.jpg"
+														title="DSC09162" class="dt-pswp-item"
+														data-large_image_width="6000"
+														data-large_image_height="3376"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09162/"
+														aria-label="Gallery image"></a><a
+														href="https://humanlibrary.org/wp-content/uploads/DSC09186.jpg"
+														title="DSC09186" class="dt-pswp-item"
+														data-large_image_width="4422"
+														data-large_image_height="2488"
+														data-dt-img-description=""
+														data-dt-location="https://humanlibrary.org/hlo/book-awards-2018/dsc09186/"
+														aria-label="Gallery image"></a></div>
+												<figcaption class="rollover-content">
+													<span class="rollover-thumbnails"><span
+															class="r-thumbn-1"><img class="preload-me"
+																src="https://humanlibrary.org/wp-content/uploads/DSC09219-150x150.jpg"
+																srcset="https://humanlibrary.org/wp-content/uploads/DSC09219-150x150.jpg 150w"
+																sizes="150px" alt=""
+																width="90" /><i></i></span><span
+															class="r-thumbn-2"><img class="preload-me"
+																src="https://humanlibrary.org/wp-content/uploads/DSC09248-150x150.jpg"
+																srcset="https://humanlibrary.org/wp-content/uploads/DSC09248-150x150.jpg 150w"
+																sizes="150px" alt=""
+																width="90" /><i></i></span><span
+															class="r-thumbn-3"><img class="preload-me"
+																src="https://humanlibrary.org/wp-content/uploads/DSC08745-150x150.jpg"
+																srcset="https://humanlibrary.org/wp-content/uploads/DSC08745-150x150.jpg 150w"
+																sizes="150px" alt=""
+																width="90" /><i></i></span></span>
+													<div class="rollover-content-container">
+														<h3 class="entry-title"><a
+																href="https://humanlibrary.org/hlo/book-awards-2018/"
+																title="Book Awards 2018"
+																class="dt-trigger-first-pswp">Anchoring by Nakul Maini</a></h3>
+														<p>Photos and Videos by Nakul Maini</p>
+													</div>
+												</figcaption>
+											</figure>
+										</article>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		                </div><!-- #content -->
+
+
+
+
+		            </div><!-- .wf-container -->
+		        </div><!-- .wf-wrap -->
+
+
+		    </div><!-- #main -->
+
+
+
+
+
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-content/themes/dt-the7/js/main.min.js?ver=10.1.0.1' id='dt-main-js'></script>
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-content/plugins/cff-extensions/cff-carousel/js/carousel.js?ver=1.2.1'
+		        id='cff_carousel_js-js'></script>
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7'
+		        id='regenerator-runtime-js'></script>
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'>
+		    </script>
+		    <script type='text/javascript' id='contact-form-7-js-extra'>
+		    /* <![CDATA[ */
+		    var wpcf7 = {
+		        "api": {
+		            "root": "https:\/\/humanlibrary.org\/wp-json\/",
+		            "namespace": "contact-form-7\/v1"
+		        }
+		    };
+		    /* ]]> */
+		    </script>
+
+
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-content/plugins/give/assets/dist/js/give-donation-summary.js?ver=2.17.1'
+		        id='give-donation-summary-script-frontend-js'></script>
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-content/themes/dt-the7/lib/jquery-mousewheel/jquery-mousewheel.min.js?ver=10.1.0.1'
+		        id='jquery-mousewheel-js'></script>
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.js?ver=10.1.0.1'
+		        id='the7-custom-scrollbar-js'></script>
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-content/plugins/dt-the7-core/assets/js/post-type.min.js?ver=2.5.7.1'
+		        id='the7-core-js'></script>
+		    <script type='text/javascript' src='https://humanlibrary.org/wp-includes/js/wp-embed.min.js?ver=5.8.2'
+		        id='wp-embed-js'></script>
+		    <script type='text/javascript'
+		        src='https://humanlibrary.org/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.6.0.1'
+		        id='wpb_composer_front_js-js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    <div
+		        class="shortcode-single-image-wrap shortcode-single-image-a18eec9407d652a56cf7b16982f54973 alignnone  vc_custom_1547327847734 enable-bg-rollover dt-icon-bg-off">
+		        <div class="shortcode-single-image">
+		        </div>
+		    </div>
+		    <div id="ultimate-heading-3973613c9a6a49b44"
+		        class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3973613c9a6a49b44 uvc-2962 color-title"
+		        data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+		        <div class="uvc-heading-spacer no_spacer" style="top">
+		        </div>
+		        <div class="vc_row wpb_row vc_row-fluid">
+		            <div class="wpb_column vc_column_container vc_col-sm-12">
+		                <div class="vc_column-inner">
+		                    <div class="wpb_wrapper">
+		                        <div class="ult-spacer spacer-613c9a6a49f8b" data-id="613c9a6a49f8b" data-height="10"
+		                            data-height-mobile="10" data-height-tab="10" data-height-tab-portrait=""
+		                            data-height-mobile-landscape="" style="clear:both;display:block;"></div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="vc_row wpb_row vc_row-fluid">
+		            <div class="wpb_column vc_column_container vc_col-sm-3">
+		                <div class="vc_column-inner">
+		                    <div class="wpb_wrapper">
+
+
+		                    </div><!-- #content -->
+
+
+
+
+		                </div>
+		                <!--.wf-container -->
+		            </div><!-- .wf-wrap -->
+
+
+		        </div><!-- #main -->
+
+		        <!-- !Footer -->
+
+				<footer id="footer" class="footer solid-bg">
+		                            <div class="wf-wrap">
+		                                <div class="wf-container-footer">
+		                                    <div class="wf-container">
+		                                        <section id="text-2" class="widget widget_text wf-cell wf-1-4">
+		                                            <div class="textwidget">
+		                                                <p>
+		                                                    <img style="margin: 5px 0px 5px 0px; max-width: 100%;"
+		                                                        src="C:\Users\lenovo\Desktop\The Speaking Library\7.png"
+		                                                        width="500" />
+		                                                </p>
+		                                                <p style="color: #ffffff; padding-bottom: 10px;">
+		                                                    Based in Delhi, India with emerging partners from different
+		                                                    countries around the World.
+		                                                </p>
+		                                            </div>
+		                                        </section>
+
+		                                        <section id="presscore-custom-menu-one-3"
+		                                            class="widget widget_presscore-custom-menu-one wf-cell wf-1-4">
+		                                            <div class="widget-title">
+		                                                Services Provided
+		                                            </div>
+		                                            <ul class="custom-menu show-arrow">
+		                                                <li
+		                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15664 first">
+		                                                    <!-- Put Google Forms Link here:
+                                    <a href="https://docs.google.com/forms/d/1tZTJWoHg6PKOMPLMyyaCdX3doGkaw4DZKVxDB9dSgFk/edit">-->
+		                                                    Let's Grow Together
+		                                                    </a>
+		                                                </li>
+		                                                <li
+		                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16353">
+		                                                    <!--  <a href="https://The Speaking Library/corporate-opportunities/">-->
+		                                                    What you get to learn
+		                                                    </a>
+		                                                </li>
+		                                            </ul>
+		                                        </section>
+
+		                                        <section id="presscore-blog-posts-2"
+		                                            class="widget widget_presscore-blog-posts wf-cell wf-1-4">
+		                                            <div class="widget-title">
+		                                                Weekly Updates
+		                                            </div>
+		                                            <ul class="recent-posts">
+		                                                <li>
+		                                                    <article class="post-format-standard">
+		                                                        <div class="post-content">
+		                                                            <a
+		                                                                href="https://The Speaking Library/book-of-the-month-nichola-swallow/">
+		                                                                Blog of the month:
+		                                                                <!--Name Here-->
+		                                                            </a>
+		                                                            <br />
+		                                                            <time
+		                                                                datetime="2022-03-01T09:14:34+01:00">01/03/2022</time>
+		                                                        </div>
+		                                                    </article>
+		                                                </li>
+		                                                <li>
+		                                                    <article class="post-format-standard">
+		                                                        <div class="post-content">
+		                                                            <a
+		                                                                href="https://The Speaking Library/masco-announced-as-founding-partner-for-human-library-app/">
+		                                                                Vlog of the month:
+		                                                                <!--Name Here-->
+		                                                            </a>
+		                                                            <br />
+		                                                            <time datetime="2022-03-01T11:10:08+01:00">
+		                                                                01/03/2022
+		                                                            </time>
+		                                                        </div>
+		                                                    </article>
+		                                                </li>
+		                                                <li>
+		                                                    <article class="post-format-standard">
+		                                                        <div class="post-content">
+		                                                            <a href="Put Link of feedback videos here">
+		                                                                The Impact of The Speaking Library on Audience  
+		                                                            </a>
+		                                                            <br />
+		                                                            <time datetime="2021-04-08T12:54:46+01:00">
+		                                                                08/04/2021
+		                                                            </time>
+		                                                        </div>
+		                                                    </article>
+		                                                </li>
+		                                            </ul>
+		                                        </section>
+		                                    </div><!-- .wf-container -->
+		                                </div><!-- .wf-container-footer -->
+		                            </div><!-- .wf-wrap -->
+
+		                            <!-- !Bottom-bar -->
+
+		                            <div id="bottom-bar" class="full-width-line logo-center" role="contentinfo">
+		                                <div class="wf-wrap">
+		                                    <div class="wf-container-bottom">
+		                                        <div class="wf-float-left">
+		                                            Speaking Library , Serving Readers and Listeners Since 2021
+		                                        </div>
+		                                        <div class="wf-float-right">
+		                                        </div>
+
+		                                    </div><!-- .wf-container-bottom -->
+		                                </div><!-- .wf-wrap -->
+		                            </div><!-- #bottom-bar -->
+		                        </footer><!-- #footer -->
+		                        <a href="#" class="scroll-top">
+		                            <span class="screen-reader-text">
+		                                Go to Top
+		                            </span>
+		                        </a>
+		                    </div><!-- #page -->
+
+		                    <script type="text/html" id="wpb-modifications">
+		                    </script>
+		                    <link rel='stylesheet' id='rs-plugin-settings-css'
+		                        href='../wp-content/plugins/revslider/public/assets/css/rs6069c.css?ver=6.5.8' type='text/css'
+		                        media='all' />
+		                    <style id='rs-plugin-settings-inline-css' type='text/css'>
+		                    #rs-demo-id {}
+		                    </style>
+
+		                    <script type='text/javascript' src='../wp-content/themes/dt-the7/js/main.mine7f3.js?ver=9.17.0'
+		                        id='dt-main-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/plugins/cff-extensions/cff-carousel/js/carousel1576.js?ver=1.2.1'
+		                        id='cff_carousel_js-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7'
+		                        id='regenerator-runtime-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/plugins/contact-form-7/includes/js/index7661.js?ver=5.4.2'
+		                        id='contact-form-7-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/plugins/wpcf7-redirect/build/js/wpcf7-redirect-frontend-script4963.js?ver=1.1'
+		                        id='wpcf7-redirect-script-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/plugins/custom-facebook-feed-pro/assets/js/cff-scripts0bb8.js?ver=3.19.5'
+		                        id='cffscripts-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/themes/dt-the7/lib/jquery-mousewheel/jquery-mousewheel.mine7f3.js?ver=9.17.0'
+		                        id='jquery-mousewheel-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.mine7f3.js?ver=9.17.0'
+		                        id='the7-custom-scrollbar-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/plugins/dt-the7-core/assets/js/post-type.min3354.js?ver=2.5.7.1'
+		                        id='the7-core-js'>
+		                    </script>
+
+		                    <script type='text/javascript' src='../wp-includes/js/wp-embed.minf658.js?ver=5.8.1'
+		                        id='wp-embed-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.minfb18.js?ver=6.6.0.1'
+		                        id='wpb_composer_front_js-js'>
+		                    </script>
+
+		                    <script type='text/javascript'
+		                        src='../wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.minfb18.js?ver=6.6.0.1'
+		                        id='vc_waypoints-js'>
+		                    </script>
+
+		                    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		                        <div class="pswp__bg">
+		                        </div>
+		                        <div class="pswp__scroll-wrap">
+		                            <div class="pswp__container">
+		                                <div class="pswp__item">
+		                                </div>
+		                                <div class="pswp__item">
+		                                </div>
+		                                <div class="pswp__item">
+		                                </div>
+		                            </div>
+		                            <div class="pswp__ui pswp__ui--hidden">
+		                                <div class="pswp__top-bar">
+		                                    <div class="pswp__counter">
+		                                    </div>
+		                                    <button class="pswp__button pswp__button--close" title="Close (Esc)"
+		                                        aria-label="Close (Esc)">
+		                                    </button>
+		                                    <button class="pswp__button pswp__button--share" title="Share" aria-label="Share">
+		                                    </button>
+		                                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"
+		                                        aria-label="Toggle fullscreen">
+		                                    </button>
+		                                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"
+		                                        aria-label="Zoom in/out">
+		                                    </button>
+		                                    <div class="pswp__preloader">
+		                                        <div class="pswp__preloader__icn">
+		                                            <div class="pswp__preloader__cut">
+		                                                <div class="pswp__preloader__donut">
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                                    <div class="pswp__share-tooltip">
+		                                    </div>
+		                                </div>
+		                                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"
+		                                    aria-label="Previous (arrow left)">
+		                                </button>
+		                                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"
+		                                    aria-label="Next (arrow right)">
+		                                </button>
+		                                <div class="pswp__caption">
+		                                    <div class="pswp__caption__center">
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		</body>
+
+		</html>
